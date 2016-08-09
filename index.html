@@ -2,19 +2,10 @@
 layout: default
 title: jaeyoi blog
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-  <title>{{ page.title }}</title>
-</head>
-<body>
-	<ul>
-		{% for post in site.posts %}
-		<li>
-			<a href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-		{% endfor %}
-	</ul>
-</body>
-</html>
+<ul>
+	{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+	{% endfor %}
+</ul>
