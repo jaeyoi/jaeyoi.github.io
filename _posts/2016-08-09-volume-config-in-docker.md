@@ -39,6 +39,8 @@ services:
 * COPY 및 RUN은 mount 되기 전의 container 폴더에 적용됨
 * CMD는 mount된 이후에 적용됨
 * 개발환경에서는 Dockerfile을 다음과 같이 해도 동작하나, 실 환경을 고려해서 위의 예제처럼 보통 사용. 아래 같은 경우, docker-compose.yml에서 volume 설정이 빠지면(실환경에서는 뺌) /code 폴더에 아무것도 안 들어있게 됨.
+
+### Dockerfile 변형 (개발용에 적용 가능)
 ```
 FROM python:3.5
 
